@@ -46,7 +46,7 @@ $HOME/.composer/vendor/bin/valet install
 mkdir $HOME/dev
 
 # Create subdirectories
-mkdir $HOME/dev/website
+mkdir $HOME/dev/sites
 mkdir $HOME/dev/python
 mkdir $HOME/dev/packages
 

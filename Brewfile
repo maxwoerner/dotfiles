@@ -44,11 +44,11 @@ brew 'node'
 # brew 'yarn'
 brew "dnsmasq"
 brew "mailhog"
-brew "romkatv/powerlevel10k/powerlevel10k"
 
 ## Apps
 cask '1password'
 # cask 'caffeine'
+# cask 'citrix-workspace'
 cask 'dbngin'
 # cask 'discord'
 cask 'docker'

@@ -2,11 +2,7 @@
 
 ## Introduction
 
-This repository serves as my way to maintain and setup my Mac. It is deeply inspired by [Dries Vints' dotfiles](https://github.com/driesvints/dotfiles) who also offers great learning material on this topic:
-
-📖 - [Blog post](https://driesvints.com/blog/getting-started-with-dotfiles)  
-📺 - [Screencast on Laracasts](https://laracasts.com/series/guest-spotlight/episodes/1)  
-💡 - [Build your own dotfiles](https://github.com/driesvints/dotfiles#your-own-dotfiles)
+This repository serves as my way to maintain and setup my Mac. It is deeply inspired by [Dries Vints' dotfiles](https://github.com/driesvints/dotfiles) who also offers great learning material on this topic. Check out his [blog post](https://driesvints.com/blog/getting-started-with-dotfiles) or watch the [screencast on Laracasts](https://laracasts.com/series/guest-spotlight/episodes/1).
 
 Everything needed to install my preferred setup of macOS is detailed in this readme.
 
@@ -40,22 +36,53 @@ After backing up your old Mac you may now follow these install instructions to s
     git clone git@github.com:mxwebdev/dotfiles.git ~/.dotfiles
     ```
 
-4. Run the installation with:
+4. Make the installation script executable with:
+
+    ```zsh
+    chmod +x ~/.dotfiles/fresh.sh
+    ```
+
+    And run the installation with:
 
     ```zsh
     ~/.dotfiles/fresh.sh
     ```
 
 5. After mackup is synced with your cloud storage, restore preferences by running `mackup restore`
+
 6. Restart your computer to finalize the process
+
+7. Launch the Fig application to finalize the setup
 
 Your Mac is now ready to use!
 
 ## Maintain existing macOS setup
-** Add: explain how to adjust files and execute commands to maintain the live environment within you dotfiles **
 
+## Add 
+- To adjust you MacOS settings simply edit the [`.macos`](./.macos) file and run the following command:
+
+    ```zsh
+    source ~/.dotfiles/.macos
+    ```
+
+- To install additional software simply add the specific entry in your [`Brewfile`](./Brewfile) and update the Homebrew recipes:
+
+    ```zsh
+    brew update
+    ```
+
+    Afterwards, run install all dependencies with bundle:
+
+    ```zsh
+    brew bundle --file $DOTFILES/Brewfile
+    ```
 ## Notes
 
 - MacOS settings are specified in the [`.macos`](./.macos) file. You can find much more settings at [the original script by Mathias Bynens](https://github.com/mathiasbynens/dotfiles/blob/master/.macos) and [Kevin Suttle's macOS Defaults project](https://github.com/kevinSuttle/MacOS-Defaults).
 - Check out the [`Brewfile`](./Brewfile) file and adjust the apps you want to install for your machine. Use [their search page](https://caskroom.github.io/search) to check if the app you want to install is available.
 - Custom aliases can be added via the [`aliases.zsh`](./aliases.zsh) file. If you need to tweak your `$PATH` check out the [`path.zsh`](./path.zsh) file. These files get loaded in because the `$ZSH_CUSTOM` setting points to the `.dotfiles` directory.
+
+## Roadmap
+
+- Add [mackup](https://github.com/lra/mackup) to the workflow
+- Check setting up `.gitignore` and Git config

@@ -176,14 +176,17 @@ sudo pmset -a autorestart 1
 # Restart automatically if the computer freezes
 sudo systemsetup -setrestartfreeze on
 
-# Sleep the display after 15 minutes
-sudo pmset -a displaysleep 15
+# Set machine sleep to 30 minutes while charging
+sudo pmset -c sleep 30
 
-# Disable machine sleep while charging
-sudo pmset -c sleep 0
+# Set display sleep to 15 minutes while charging
+sudo pmset -c displaysleep 15
 
 # Set machine sleep to 5 minutes on battery
 sudo pmset -b sleep 5
+
+# Set display sleep to 2 minutes on battery
+sudo pmset -b displaysleep 2
 
 # Set standby delay to 24 hours (default is 1 hour)
 sudo pmset -a standbydelay 86400
@@ -408,7 +411,7 @@ defaults write com.apple.dock minimize-to-application -bool true
 # defaults write com.apple.dock showhidden -bool true
 
 # Don’t show recent applications in Dock
-# defaults write com.apple.dock show-recents -bool false
+defaults write com.apple.dock show-recents -bool false
 
 # Disable the Launchpad gesture (pinch with thumb and three fingers)
 # defaults write com.apple.dock showLaunchpadGestureEnabled -int 0
