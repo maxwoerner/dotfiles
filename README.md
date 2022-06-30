@@ -73,7 +73,7 @@ Your Mac is now ready to use!
     Afterwards, run install all dependencies with bundle:
 
     ```zsh
-    brew bundle --file $DOTFILES/Brewfile
+    brew bundle --file ~/.dotfiles/Brewfile
     ```
 ## Notes
 
