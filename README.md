@@ -49,11 +49,11 @@ After backing up your old Mac you may now follow these install instructions to s
    ~/.dotfiles/fresh.sh
    ```
 
-<!-- 5. After mackup is synced with your cloud storage, restore preferences by running `mackup restore` -->
+5. After mackup is synced with your cloud storage, restore preferences by running `mackup restore`
 
-5. Restart your computer to finalize the process
+6. Restart your computer to finalize the process
 
-6. Launch the Fig application to finalize the setup
+7. Launch the Fig application to finalize the setup
 
 Your Mac is now ready to use!
 
@@ -82,8 +82,3 @@ Your Mac is now ready to use!
 - MacOS settings are specified in the [`.macos`](./.macos) file. You can find much more settings at [the original script by Mathias Bynens](https://github.com/mathiasbynens/dotfiles/blob/master/.macos) and [Kevin Suttle's macOS Defaults project](https://github.com/kevinSuttle/MacOS-Defaults).
 - Check out the [`Brewfile`](./Brewfile) file and adjust the apps you want to install for your machine. Use [their search page](https://caskroom.github.io/search) to check if the app you want to install is available.
 - Custom aliases can be added via the [`aliases.zsh`](./aliases.zsh) file. If you need to tweak your `$PATH` check out the [`path.zsh`](./path.zsh) file. These files get loaded in because the `$ZSH_CUSTOM` setting points to the `.dotfiles` directory.
-
-## Roadmap
-
-- Add [mackup](https://github.com/lra/mackup) to the workflow
-- Check setting up `.gitignore` and Git config
