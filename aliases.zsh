@@ -1,6 +1,9 @@
 # Set default homebrew architecture
 alias brew='arch -arm64 /opt/homebrew/bin/brew'
 
+# Git
+alias wip='git add . && git commit -m "WIP"'
+
 # Directories
 alias dev='cd ~/dev'
 alias sites='cd ~/dev/sites'
@@ -24,3 +27,6 @@ alias wip='commit "WIP"'
 
 # Terraform
 alias tf='terraform'
+
+# iCloud Drive
+alias drive='cd ~/Library/Mobile\ Documents/com~apple~CloudDocs/'

@@ -19,8 +19,8 @@ brew 'mackup'
 brew 'romkatv/powerlevel10k/powerlevel10k'
 
 ## Development
-brew 'php', restart_service: true, link: false
-brew 'php@8.1', link: true
+brew 'php'
+brew 'php@8.1'
 brew 'composer'
 # brew 'imagemagick'
 # brew 'meilisearch'
@@ -29,8 +29,8 @@ brew 'node'
 # brew 'redis'
 # brew 'yarn'
 brew 'dnsmasq'
-brew 'mailhog', restart_service: true
-brew 'nginx', restart_service: true
+brew 'mailhog'
+brew 'nginx'
 brew 'smartmontools'
 
 ## Infrastructure
@@ -49,6 +49,7 @@ cask 'phpmon'
 cask 'raycast'
 cask 'slack'
 cask 'spotify'
+cask 'synology-drive'
 cask 'tableplus'
 cask 'visual-studio-code'
 cask 'whatsapp'

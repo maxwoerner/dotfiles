@@ -22,7 +22,7 @@ ln -s $HOME/.dotfiles/.zshrc $HOME/.zshrc
 # Update Homebrew recipes
 brew update
 
-# Install all our dependencies with bundle (See Brewfile)
+# Install all our dependencies with bundle (see Brewfile)
 brew tap homebrew/bundle
 brew bundle --file $DOTFILES/Brewfile
 
@@ -34,27 +34,18 @@ mysql -u root -e "ALTER USER root@localhost IDENTIFIED WITH mysql_native_passwor
 
 # Install global Composer packages
 /usr/local/bin/composer global require laravel/installer laravel/valet
-# beyondcode/expose spatie/global-ray spatie/visit
 
 # Install Laravel Valet
 $HOME/.composer/vendor/bin/valet install
 
-# Install Global Ray
-# $HOME/.composer/vendor/bin/global-ray install
-
 # Create a dev directory
 mkdir $HOME/dev
-
-# Create subdirectories
-mkdir $HOME/dev/sites
-mkdir $HOME/dev/python
-mkdir $HOME/dev/packages
 
 # Clone Github repositories
 $DOTFILES/clone.sh
 
 # Symlink the Mackup config file to the home directory
-# ln -s $DOTFILES/.mackup.cfg $HOME/.mackup.cfg
+ln -s $DOTFILES/.mackup.cfg $HOME/.mackup.cfg
 
 # Set macOS preferences - we will run this last because this will reload the shell
 source $DOTFILES/.macos
