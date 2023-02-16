@@ -9,6 +9,7 @@ Everything needed to install my preferred setup of macOS is detailed in this rea
 ## Fresh macOS setup
 
 Follow the instructions below to set up a new Mac.
+
 ### Backup your data
 
 If you're migrating from an existing Mac, you should first make sure to backup all of your existing data. Go through the checklist below to make sure you didn't forget anything before you migrate.
@@ -27,26 +28,26 @@ After backing up your old Mac you may now follow these install instructions to s
 2. [Generate a new public and private SSH key](https://docs.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent) by running:
 
    ```zsh
-   curl https://raw.githubusercontent.com/mxwebdev/dotfiles/main/ssh.sh | sh -s "<your-email-address>"
+   curl https://raw.githubusercontent.com/maxwoerner/dotfiles/main/ssh.sh | sh -s "<your-email-address>"
    ```
 
 3. Clone this repo to `~/.dotfiles` with:
 
-    ```zsh
-    git clone git@github.com:mxwebdev/dotfiles.git ~/.dotfiles
-    ```
+   ```zsh
+   git clone git@github.com:maxwoerner/dotfiles.git ~/.dotfiles
+   ```
 
 4. Make the installation script executable with:
 
-    ```zsh
-    chmod +x ~/.dotfiles/fresh.sh
-    ```
+   ```zsh
+   chmod +x ~/.dotfiles/fresh.sh
+   ```
 
-    And run the installation with:
+   And run the installation with:
 
-    ```zsh
-    ~/.dotfiles/fresh.sh
-    ```
+   ```zsh
+   ~/.dotfiles/fresh.sh
+   ```
 
 <!-- 5. After mackup is synced with your cloud storage, restore preferences by running `mackup restore` -->
 
@@ -60,21 +61,22 @@ Your Mac is now ready to use!
 
 - To adjust you MacOS settings simply edit the [`.macos`](./.macos) file and run the following command:
 
-    ```zsh
-    source ~/.dotfiles/.macos
-    ```
+  ```zsh
+  source ~/.dotfiles/.macos
+  ```
 
 - To install additional software simply add the specific entry in your [`Brewfile`](./Brewfile) and update the Homebrew recipes:
 
-    ```zsh
-    brew update
-    ```
+  ```zsh
+  brew update
+  ```
 
-    Afterwards, run install all dependencies with bundle:
+  Afterwards, run install all dependencies with bundle:
 
-    ```zsh
-    brew bundle --file ~/.dotfiles/Brewfile
-    ```
+  ```zsh
+  brew bundle --file ~/.dotfiles/Brewfile
+  ```
+
 ## Notes
 
 - MacOS settings are specified in the [`.macos`](./.macos) file. You can find much more settings at [the original script by Mathias Bynens](https://github.com/mathiasbynens/dotfiles/blob/master/.macos) and [Kevin Suttle's macOS Defaults project](https://github.com/kevinSuttle/MacOS-Defaults).
