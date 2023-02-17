@@ -17,14 +17,14 @@ fi
 
 # Removes .zshrc from $HOME (if it exists) and symlinks the .zshrc file from the .dotfiles
 rm -rf $HOME/.zshrc
-ln -s $HOME/.dotfiles/.zshrc $HOME/.zshrc
+ln -s .zshrc $HOME/.zshrc
 
 # Update Homebrew recipes
 brew update
 
 # Install all our dependencies with bundle (see Brewfile)
 brew tap homebrew/bundle
-brew bundle --file $DOTFILES/Brewfile
+brew bundle --file ./Brewfile
 
 # Set default MySQL root password and auth type
 brew services start mysql
@@ -43,11 +43,11 @@ $HOME/.composer/vendor/bin/valet install
 mkdir $HOME/dev
 
 # Clone Github repositories
-$DOTFILES/clone.sh
+./clone.sh
 
 # Symlink the Mackup config file to the home directory
 rm -rf $HOME/.mackup.cfg
-ln -s $HOME/.dotfiles/.mackup.cfg $HOME/.mackup.cfg
+ln -s .mackup.cfg $HOME/.mackup.cfg
 
 # Set macOS preferences - we will run this last because this will reload the shell
-source $DOTFILES/.macos
+source ./.macos

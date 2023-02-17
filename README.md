@@ -46,14 +46,14 @@ After backing up your old Mac you may now follow these install instructions to s
    And run the installation with:
 
    ```zsh
-   ~/.dotfiles/fresh.sh
+   cd ~/.dotfiles && ./fresh.sh
    ```
 
 5. After mackup is synced with your cloud storage, restore preferences by running `mackup restore`
 
 6. Restart your computer to finalize the process
 
-7. Launch the Fig application to finalize the setup
+7. (If required) launch any application to finalize the specific setup process (e.g. login)
 
 Your Mac is now ready to use!
 
