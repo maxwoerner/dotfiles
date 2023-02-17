@@ -3,7 +3,7 @@
 # Thanks to Mathias Bynens!
 # ~/.macos — https://mths.be/macos
 
-COMPUTER_NAME="MWs MacBook Pro"
+COMPUTER_NAME="MWs-MacBook-Pro"
 
 # Close any open System Preferences panes, to prevent them from overriding settings we’re about to change
 osascript -e 'tell application "System Preferences" to quit'
@@ -113,6 +113,7 @@ defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
 ###############################################################################
 
 # Trackpad: enable tap to click for this user and for the login screen
+defaults write com.apple.AppleMultitouchTrackpad Clicking -bool true
 defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool true
 defaults -currentHost write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
 defaults write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
@@ -158,7 +159,7 @@ defaults write NSGlobalDomain AppleMetricUnits -bool true
 # sudo defaults write /Library/Preferences/com.apple.loginwindow showInputMenu -bool true
 
 # Set the timezone; see `sudo systemsetup -listtimezones` for other values
-sudo systemsetup -settimezone "Europe/Berlin" > /dev/null
+# sudo systemsetup -settimezone "Europe/Berlin" > /dev/null
 
 # Stop iTunes from responding to the keyboard media keys
 #launchctl unload -w /System/Library/LaunchAgents/com.apple.rcd.plist 2> /dev/null
@@ -174,7 +175,7 @@ sudo pmset -a lidwake 1
 sudo pmset -a autorestart 1
 
 # Restart automatically if the computer freezes
-sudo systemsetup -setrestartfreeze on
+# sudo systemsetup -setrestartfreeze on
 
 # Set machine sleep to 30 minutes while charging
 sudo pmset -c sleep 30
@@ -192,7 +193,7 @@ sudo pmset -b displaysleep 2
 sudo pmset -a standbydelay 86400
 
 # Never go into computer sleep mode
-sudo systemsetup -setcomputersleep Off > /dev/null
+# sudo systemsetup -setcomputersleep Off > /dev/null
 
 # Hibernation mode
 # 0: Disable hibernation (speeds up entering sleep mode)
@@ -333,7 +334,7 @@ defaults write com.apple.finder WarnOnEmptyTrash -bool false
 defaults write com.apple.NetworkBrowser BrowseAllInterfaces -bool true
 
 # Show the ~/Library folder
-chflags nohidden ~/Library && xattr -d com.apple.FinderInfo ~/Library
+chflags nohidden ~/Library
 
 # Show the /Volumes folder
 # sudo chflags nohidden /Volumes
@@ -445,7 +446,7 @@ defaults write com.apple.dock show-recents -bool false
 defaults write com.apple.dock wvous-tl-corner -int 2
 defaults write com.apple.dock wvous-tl-modifier -int 0
 # Top right screen corner → Desktop
-defaults write com.apple.dock wvous-tr-corner -int 10
+defaults write com.apple.dock wvous-tr-corner -int 4
 defaults write com.apple.dock wvous-tr-modifier -int 0
 # Bottom left screen corner → Start screen saver
 # defaults write com.apple.dock wvous-bl-corner -int 5

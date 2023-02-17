@@ -40,7 +40,7 @@ After backing up your old Mac you may now follow these install instructions to s
 4. Make the installation script executable with:
 
    ```zsh
-   chmod +x ~/.dotfiles/fresh.sh
+   chmod +x ~/.dotfiles/fresh.sh ~/.dotfiles/clone.sh
    ```
 
    And run the installation with:
