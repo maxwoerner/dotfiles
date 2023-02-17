@@ -1,5 +1,5 @@
 # Set default homebrew architecture
-alias brew='arch -arm64 /opt/homebrew/bin/brew'
+# alias brew='arch -arm64 /opt/homebrew/bin/brew'
 
 # Git
 alias wip='git add . && git commit -m "WIP"'
