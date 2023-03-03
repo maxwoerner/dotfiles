@@ -38,6 +38,7 @@ brew 'hashicorp/tap/terraform'
 
 ## Apps
 cask '1password7'
+cask 'balenaetcher'
 cask 'dbngin'
 cask 'discord'
 cask 'docker'
