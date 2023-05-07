@@ -20,6 +20,8 @@ alias comp='php composer'
 alias fresh='php artisan migrate:fresh --seed'
 alias test='php artisan test'
 alias pint='./vendor/bin/pint'
+alias ide='php artisan ide-helper:generate && php artisan ide-helper:models --nowrite'
+alias analyse='./vendor/bin/phpstan analyse'
 
 # Git
 alias commit='git add . && git commit -m'
