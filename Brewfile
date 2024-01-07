@@ -1,13 +1,12 @@
 ## Taps
-tap 'homebrew/core'
 tap 'homebrew/services'
-tap 'homebrew/cask'
 tap 'homebrew/cask-fonts'
 tap 'homebrew/cask-versions'
 tap 'homebrew/bundle'
 tap 'hashicorp/tap'
 tap 'nicoverbruggen/cask'
 tap 'romkatv/powerlevel10k'
+tap 'stripe/stripe-cli'
 
 ## Binaries
 brew 'awscli'
@@ -16,11 +15,15 @@ brew 'coreutils' # Those that come with macOS are outdated
 brew 'git'
 brew 'mackup'
 # brew 'mas' # Mac App Store manager
-brew 'romkatv/powerlevel10k/powerlevel10k'
+brew 'powerlevel10k'
+brew 'iperf'
+brew 'iperf3'
+brew 'stripe/stripe-cli/stripe'
 
 ## Development
 brew 'php'
 brew 'php@8.1'
+brew 'php@8.2'
 brew 'composer'
 brew 'imagemagick'
 brew 'pkg-config'
@@ -33,9 +36,16 @@ brew 'dnsmasq'
 brew 'mailhog'
 brew 'nginx'
 brew 'smartmontools'
+brew 'telnet'
 
 ## Infrastructure
 brew 'hashicorp/tap/terraform'
+brew 'ansible'
+brew 'helm'
+
+## Music / video
+brew 'ffmpeg'
+brew 'handbrake'
 
 ## Apps
 cask '1password7'
@@ -61,6 +71,8 @@ cask 'prusaslicer'
 cask 'raspberry-pi-imager'
 cask 'zoom'
 cask 'arc'
+cask 'musescore'
+cask 'audacity'
 
 cask 'microsoft-excel'
 cask 'microsoft-word'

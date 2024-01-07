@@ -1,8 +1,12 @@
 # Set default homebrew architecture
 # alias brew='arch -arm64 /opt/homebrew/bin/brew'
 
+# Brew
+alias brewfile='brew bundle --file ~/.dotfiles/Brewfile'
+
 # Git
 alias wip='git add . && git commit -m "WIP"'
+alias commit='git add . && git commit -m'
 
 # Directories
 alias dev='cd ~/dev'
@@ -21,11 +25,7 @@ alias fresh='php artisan migrate:fresh --seed'
 alias test='php artisan test'
 alias pint='./vendor/bin/pint'
 alias ide='php artisan ide-helper:generate && php artisan ide-helper:models --nowrite'
-alias analyse='./vendor/bin/phpstan analyse'
-
-# Git
-alias commit='git add . && git commit -m'
-alias wip='commit "WIP"'
+alias analyse='./vendor/bin/phpstan'
 
 # Terraform
 alias tf='terraform'
