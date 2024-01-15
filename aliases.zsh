@@ -2,7 +2,7 @@
 # alias brew='arch -arm64 /opt/homebrew/bin/brew'
 
 # Brew
-alias brewfile='brew bundle --file ~/.dotfiles/Brewfile'
+alias brewfile='brew update && brew bundle --file ~/.dotfiles/Brewfile'
 
 # Git
 alias wip='git add . && git commit -m "WIP"'
