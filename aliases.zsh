@@ -17,6 +17,7 @@ alias dot='cd ~/.dotfiles'
 alias dotfiles="cd ~/.dotfiles"
 alias gigtune='cd ~/dev/sites/gigtune'
 alias crm='cd ~/dev/sites/crm'
+alias dk='cd ~/dev/sites/dk-academy/wp-content/themes/dk-academy'
 
 # Laravel
 alias art='php artisan'
@@ -26,6 +27,9 @@ alias test='php artisan test'
 alias pint='./vendor/bin/pint'
 alias ide='php artisan ide-helper:generate && php artisan ide-helper:models --nowrite'
 alias analyse='./vendor/bin/phpstan'
+
+# Python
+alias python='python3'
 
 # Terraform
 alias tf='terraform'
