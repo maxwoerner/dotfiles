@@ -12,3 +12,6 @@ export PATH="node_modules/.bin:vendor/bin:$PATH"
 
 # Herd injected PHP binary.
 export PATH="$HOME/Library/Application Support/Herd/bin/":$PATH
+
+# Use specific MariaDB version
+# export PATH="/opt/homebrew/opt/mariadb@10.6/bin:$PATH"
