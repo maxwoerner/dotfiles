@@ -13,36 +13,35 @@ brew 'awscli'
 brew 'bash' # Latest Bash version
 brew 'coreutils' # Those that come with macOS are outdated
 brew 'git'
+brew 'iperf3'
+brew 'k3sup'
 brew 'mackup'
 # brew 'mas' # Mac App Store manager
 brew 'powerlevel10k'
-brew 'iperf3'
-brew 'stripe/stripe-cli/stripe'
 
 ## Development
-# brew 'php'
-# brew 'php@8.1'
-# brew 'php@8.2'
-# brew 'composer'
-brew 'imagemagick'
-brew 'pkg-config'
-# brew 'meilisearch'
-# brew 'mysql'
-# brew 'mariadb@10.6'
-brew 'node'
-# brew 'redis'
-brew 'yarn'
+# brew 'composer' # Managed via Herd
 # brew 'dnsmasq'
-brew 'mailhog'
-# brew 'nginx'
-brew 'smartmontools'
+brew 'imagemagick'
+# brew 'mailhog' # Used Herd instead
+# brew 'meilisearch' # Managed via Herd
+# brew 'mysql' # Managed via Herd
+# brew 'node' # Managed via Herd
+# brew 'php' # Managed via Herd
+# brew 'php@8.1' # Managed via Herd
+# brew 'php@8.2' # Managed via Herd
+brew 'pkg-config'
+# brew 'redis' # Managed via Herd
+# brew 'smartmontools'
+brew 'sshpass'
+brew 'stripe/stripe-cli/stripe'
 brew 'telnet'
 brew 'wp-cli'
-brew 'sshpass'
+brew 'yarn'
 
 ## Infrastructure
-brew 'hashicorp/tap/terraform'
 brew 'ansible'
+brew 'hashicorp/tap/terraform'
 brew 'helm'
 
 ## Music / video
@@ -50,13 +49,11 @@ brew 'ffmpeg'
 
 ## Apps
 cask '1password'
-cask 'arc'
 cask 'audacity'
 cask 'balenaetcher'
 cask 'chatgpt'
 cask 'clickup'
 cask 'cyberduck'
-# cask 'dbngin'
 cask 'discord'
 cask 'docker'
 cask 'figma'
@@ -66,7 +63,6 @@ cask 'herd'
 cask 'iterm2'
 cask 'musescore'
 cask 'notion'
-# cask 'phpmon'
 cask 'postman'
 cask 'prusaslicer'
 cask 'raspberry-pi-imager'

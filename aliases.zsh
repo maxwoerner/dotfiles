@@ -11,9 +11,9 @@ alias commit='git add . && git commit -m'
 # Directories
 alias dev='cd ~/dev'
 alias sites='cd ~/dev/sites'
-alias dot='cd ~/.dotfiles'
 
 # Projects
+alias dot='cd ~/.dotfiles'
 alias dotfiles="cd ~/.dotfiles"
 alias gigtune='cd ~/dev/sites/gigtune'
 alias crm='cd ~/dev/sites/crm'
@@ -24,8 +24,9 @@ alias art='php artisan'
 alias comp='php composer'
 alias fresh='php artisan migrate:fresh --seed'
 alias test='php artisan test'
-alias pint='./vendor/bin/pint'
 alias ide='php artisan ide-helper:generate && php artisan ide-helper:models --nowrite'
+alias pint='./vendor/bin/pint'
+alias pest='./vendor/bin/pest'
 alias analyse='./vendor/bin/phpstan'
 
 # Python
